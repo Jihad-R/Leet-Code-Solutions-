@@ -71,6 +71,27 @@ I have also provided the solution in python code for anyone who is interested.  
         return max_num
 
 
+#   Palindrome Number {Easy}
+
+Given an integer x, return true if x is palindrome integer.
+
+An integer is a palindrome when it reads the same backward as forward.
+
+For example, 121 is a palindrome while 123 is not
+
+This is probably the easiest question I have come across so far. It is especially easy because I was aware of the built in functions and methods provided by the python programming language. Here are the **Runtime** and **Memory Usage** details of my solution.
+
+Runtime: 38 ms, faster than 99.62% of Python3 online submissions for Palindrome Number.
+Memory Usage: 14.2 MB, less than 78.46% of Python3 online submissions for Palindrome Number.
+
+    def isPalindrome(self, x: int) -> bool:
+        
+        x = str(x) // convert the input to a string
+        
+        return x[::-1] == x //return the comparison between the inverted string and the original string (either true or false)
+        
+I utilized my knowledge of arrays and strings in python to come up with the solution. It was such a no brainer more notably because the problem had no constraints on how to solve it. We first convert the integer input (x) into a string using the **str** (string parsing) method. Then we simply inverse the string using the following syntax *x[::-1]*. This is becuase we can index string characters in python the same way we can index array elements. This gives us great flexiblity to work with and manipulate strings. So after inverting the string we just simply compare it with the original string. Then  finally, if it is the same return true and if it is not the same return false. Simple. I feel like I cheated on this one honestly but it was fun to do. 
+        
 
 
 Thanks for reading and if you understood something then celebrate 🎉🎉🎉🎉
